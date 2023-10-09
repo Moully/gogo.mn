@@ -1,0 +1,12 @@
+.d-flex{
+    display: flex;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.w-100{
+    width: 100%;
+}

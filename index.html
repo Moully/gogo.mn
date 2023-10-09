@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" href="gogo-watch.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <div class="gogo-logo">
+                        <img src="../gogo.mn/gogo-img/gogo-logo.345096b3.png" width="70" alt="">
+                    </div>
+                    <div class="weather">
+                        <div>
+                            <span>Цаг агаар</span>
+                        </div>
+                        <div class="weather-value">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/sun-icon.b61be7df.svg" width="20" alt="">
+                            <p>17</p>
+                        </div>
+                    </div>
+                    <div class="horoscope">
+                        <div>
+                            <span>Зурхай</span>
+                        </div>
+                        <div class="horoscope-value">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/calendar-icon.ff84145b.svg" width="15" alt="">
+                            <p>9.22</p>
+                        </div>
+                    </div>
+                    <div class="exchange">
+                        <div>
+                            <span>Валютын ханш</span>
+                        </div>
+                        <div class="exchange-value">
+                            <p>$</p>
+                            <p>3463₮</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-right-dropdown">
+                    <input type="checkbox" id="mobile-menu-check">
+                    <label for="mobile-menu-check" class="button-menu">
+                        <div class="navbar-right-dropdown-side-menu">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/burger-menu.6c31a5c9.svg" alt="">
+                        </div>
+                    </label>
+                    <div class="mobile-menu-main">
+                        <div class="mobile-menu-main-top-section">
+                            <div class="mobile-menu-logo">
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/gogo-white.32f93bc2.png" width="80" alt="">
+                                </a>
+                            </div>
+                            <div class="mobile-menu-logo-exit-btn">
+                                <label for="mobile-menu-check" class="button-exit">
+                                    <img src="./gogo-img/cross-svgrepo-com (1).svg" width="20" alt="">
+                                </label>                            
+                            </div>
+                        </div>
+                        <div class="mobile-menu-main-section">
+                            <div class="search-area">
+                                <input type="text" placeholder="Хайх">
+                                <div>
+                                    <img src="./gogo-img/search-svgrepo-com.png" width="20" alt="">
+                                </div>
+                            </div>
+                            <div class="mobile-menu-main-section-navbar">
+                                <div class="mobile-menu-main-section-navbar-weather">
+                                    <div>
+                                        <span>Цаг агаар</span>
+                                    </div>
+                                    <div class="mobile-menu-main-section-navbar-weather-value">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/sun-icon.b61be7df.svg" width="20" alt="">
+                                        <p>17</p>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu-main-section-navbar-horoscope">
+                                    <div>
+                                        <span>Зурхай</span>
+                                    </div>
+                                    <div class="mobile-menu-main-section-navbar-horoscope-value">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/calendar-icon.ff84145b.svg" width="15" alt="">
+                                        <p>9.22</p>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu-main-section-navbar-exchange">
+                                    <div>
+                                        <span>Валютын ханш</span>
+                                    </div>
+                                    <div class="mobile-menu-main-section-navbar-exchange-value">
+                                        <p>$</p>
+                                        <p>3463₮</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-main-section-news">
+                                <input type="checkbox" name="" id="news-category-checkbox">
+                                <label for="news-category-checkbox">
+                                    <p>Мэдээ</p>
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/arrow-right.5aa492b0.svg" class="arrow-right" alt="">
+                                </label>
+                                <div class="news-category">
+                                    <ul>
+                                        <li>Улс төр</li>
+                                        <li>Эдийн засаг</li>
+                                        <li>Эрүүл мэнд</li>
+                                        <li>Соёл урлаг</li>
+                                        <li>Спорт</li>
+                                        <li>Нийгэм</li>
+                                        <li>Бизнес</li>
+                                        <li>Боловсрол</li>
+                                        <li>Дэлхийд</li>
+                                        <li>Технологи</li>
+                                        <li>Монгол наадам</li>
+                                        <li>GoGo тойм</li>
+                                        <li>SOS</li>
+                                        <li>Нягтлав</li>
+                                        <li>Нүүрсний хулгай</li>
+                                        <li>Мэддэг мэдээлэлдэг байя</li>
+                                    </ul>
+                                </div>
+                                <input type="checkbox" name="" id="gogo-corner-checkbox">
+                                <label for="gogo-corner-checkbox">
+                                    <p>GoGo булан</p>
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/arrow-right.5aa492b0.svg" alt="">
+                                </label>
+                                <div class="gogo-corner">
+                                    <ul>
+                                        <li>GoGo Cafe</li>
+                                        <li>Гарааны бизнес</li>
+                                        <li>Соёлын довтолгоо</li>
+                                        <li>CEO</li>
+                                        <li>Элчин сайд</li>
+                                        <li>GoGo асуулт</li>
+                                        <li>МЕГА ТӨСӨЛ</li>
+                                        <li>Гутал</li>
+                                        <li>Хүний түүх</li>                                    </ul>
+                                </div>
+                                <input type="checkbox" name="" id="live-news-checkbox">
+                                <label for="live-news-checkbox">
+                                    <div class="live-news-checkbox-live">
+                                        <p>Үзэх</p>
+                                        <span>LIVE</span>
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/arrow-right.5aa492b0.svg" alt="">
+                                    </div>
+                                </label>
+                                <div class="live-news">
+                                    <ul>
+                                        <li>Фото</li>
+                                        <li>Видео</li>
+                                        <li>Зурган өгүүлэмж</li>
+                                    </ul>
+                                </div>
+                                <input type="checkbox" name="" id="life-style-checkbox">
+                                <label for="life-style-checkbox">
+                                    <p>Хэв маяг</p>
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/arrow-right.5aa492b0.svg" alt="">
+                                </label>
+                                <div class="life-style">
+                                    <ul>
+                                        <li>Подкаст</li>
+                                        <li>Хүмүүс</li>
+                                        <li>Гэртээ тогооч</li>
+                                        <li>Аялал</li>
+                                        <li>Зөвлөгөө</li>
+                                        <li>Хоол зүйч</li>
+                                    </ul>
+                                </div>
+                                <input type="checkbox" name="" id="english-lang-checkbox">
+                                <label for="english-lang-checkbox">
+                                    <p>English</p>
+                                </label>
+                                <div class="english-lang">
+                                </div>
+                            </div>
+                            <div class="mobile-menu-main-section-anchor-logos">
+                                <div>
+                                    <a href="www.facebook.com" target="_blank">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/facebook.483468e9.svg" width="30" height="30" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="www.twitter.com" target="_blank">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/twitter.b8e7ff8d.svg" width="30" height="30" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="www.youtube.com" target="_blank">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/youtube.5095f9af.svg" width="30" height="30" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="www.instagram.com" target="_blank">
+                                        <img src="https://mgl.gogo.mn/newsn/v4/images/instagram.81bfae90.svg" width="30" height="30" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-main-section-about-us">
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" width="20" alt="">
+                                    <p>Бидний тухай</p>
+                                </a>
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/surtalchilgaa.2f9ee07e.png" width="20" alt="">
+                                    <p>Сурталчилгаа байршуулах</p>
+                                </a>
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/redakts.41ba2bab.png" width="20" alt="">
+                                    <p>Редакцийн ёс зүй</p>
+                                </a>
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/nuutslal.e823e529.png" width="20" alt="">
+                                    <p>Нууцлалын бодлого</p>
+                                </a>
+                                <a href="#">
+                                    <img src="https://mgl.gogo.mn/newsn/v4/images/holboo.99f66db8.png" width="20" alt="">
+                                    <p>Холбоо барих</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="carousel-scroll">
+                <div class="carousel-scroll-container">
+                    <div class="carousel-scroll-container-contents">
+                        <img src="https://thumbs.dreamstime.com/b/world-landmarks-photo-collage-vintage-tes-sepia-textured-background-travel-tourism-study-around-world-concept-vintag-94756410.jpg?w=1400" alt="">
+                        <div class="carousel-scroll-container-contents-texts">
+                            <h3>Мэддэг мэдээлэлдэг байя</h3>
+                            <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem illum eaque provident inventore iste nostrum maxime, excepturi, aliquam debitis adipisci neque laboriosam.</article>
+                            <div class="carousel-scroll-container-contents-texts-share-comment">
+                                <p>42</p>
+                                <p>5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-scroll-container">
+                    <div class="carousel-scroll-container-contents">
+                        <img src="https://thumbs.dreamstime.com/b/hatchback-car-travel-driving-road-trip-woman-summer-vacation-blue-car-sunset-girls-happy-traveling-enjoy-holidays-148936819.jpg?w=768" alt="">
+                        <div class="carousel-scroll-container-contents-texts">
+                            <h3>Мэддэг мэдээлэлдэг байя</h3>
+                            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos.</article>
+                            <div class="carousel-scroll-container-contents-texts-share-comment">
+                                <p>42</p>
+                                <p>5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-scroll-container">
+                    <div class="carousel-scroll-container-contents">
+                        <img src="https://thumbs.dreamstime.com/b/business-travel-concept-generic-design-white-luxury-private-jet-flying-blue-sky-sunset-uninhabited-desert-mountains-85089873.jpg?w=1400" alt="">
+                        <div class="carousel-scroll-container-contents-texts">
+                            <h3>Мэддэг мэдээлэлдэг байя</h3>
+                            <article>Аялалын боломжууд</article>
+                            <div class="carousel-scroll-container-contents-texts-share-comment">
+                                <p>42</p>
+                                <p>5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-scroll-container">
+                    <div class="carousel-scroll-container-contents">
+                        <img src="https://thumbs.dreamstime.com/b/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg?w=768" alt="">
+                        <div class="carousel-scroll-container-contents-texts">
+                            <h3>Мэддэг мэдээлэлдэг байя</h3>
+                            <article>Аялалын боломжууд</article>
+                            <div class="carousel-scroll-container-contents-texts-share-comment">
+                                <p>42</p>
+                                <p>5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-scroll-trend">
+                <a href="#">
+                    <img src="https://mgl.gogo.mn/newsn/v4/images/highlightnews.4812c9a7.png" width="15" alt="">
+                    <p>Онцлох</p>
+                </a>
+                <a href="#">
+                    <img src="https://mgl.gogo.mn/newsn/v4/images/todaynews.6ba1d8b2.png" width="15" alt="">
+                    <p>Шинэ</p>
+                </a>
+                <a href="#">
+                    <img src="https://mgl.gogo.mn/newsn/v4/images/trend.43e0b806.png" width="15" alt="">
+                    <p>Тренд</p>
+                </a>
+            </div>
+            <div class="gogo-story">
+                <div class="gogo-story-title">
+                    <h2>GoGo</h2>
+                    <span>СТОРИ</span>
+                </div>
+                <div class="card-news">
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100 card-news-background-img">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                    <div class="card-news-container relative">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.df8ba556.svg" alt="" class="absolute" width="30">
+                        <img src="https://mgl.gogo.mn/newsn/story/131247552-strikesigns-084300-970735962-6512bf0f900b4441333700.jpeg" alt="" height="235" class="w-100">
+                        <div class="absolute card-news-text">
+                            <p>Холливүүдийн зохиолчид таван сар</p>
+                            <p>414</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-news">
+                    <div class="recent-news-items">
+                        <div class="recent-news-items-img-holder">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311280-29092023-1695952697-546217164-1.jpeg" alt="">
+                        </div>
+                        <div class="recent-news-items-text">
+                            <p>Хойд Солонгос цөмийн зэвсгийн бодлогоо үндсэн хуульд тусгав</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus aut blanditiis. Consequuntur illo, laudantium animi tenetur dolore quia asperiores praesentium possimus!</p>
+                            <div class="shared-posted-times">
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg" alt="" width="14">
+                                    <span>11 минутын өмнө нийтлэв</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-news-items">
+                        <div class="recent-news-items-img-holder">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311280-29092023-1695952697-546217164-1.jpeg" alt="">
+                        </div>
+                        <div class="recent-news-items-text">
+                            <p>Хойд Солонгос цөмийн зэвсгийн бодлогоо үндсэн хуульд тусгав</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus aut blanditiis. Consequuntur illo, laudantium animi tenetur dolore quia asperiores praesentium possimus!</p>
+                            <div class="shared-posted-times">
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg" alt="" width="14">
+                                    <span>11 минутын өмнө нийтлэв</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-news-items">
+                        <div class="recent-news-items-img-holder">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311280-29092023-1695952697-546217164-1.jpeg" alt="">
+                        </div>
+                        <div class="recent-news-items-text">
+                            <p>Хойд Солонгос цөмийн зэвсгийн бодлогоо үндсэн хуульд тусгав</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus aut blanditiis. Consequuntur illo, laudantium animi tenetur dolore quia asperiores praesentium possimus!</p>
+                            <div class="shared-posted-times">
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg" alt="" width="14">
+                                    <span>11 минутын өмнө нийтлэв</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-news-items">
+                        <div class="recent-news-items-img-holder">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311280-29092023-1695952697-546217164-1.jpeg" alt="">
+                        </div>
+                        <div class="recent-news-items-text">
+                            <p>Хойд Солонгос цөмийн зэвсгийн бодлогоо үндсэн хуульд тусгав</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus aut blanditiis. Consequuntur illo, laudantium animi tenetur dolore quia asperiores praesentium possimus!</p>
+                            <div class="shared-posted-times">
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg" alt="" width="14">
+                                    <span>11 минутын өмнө нийтлэв</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-news-items">
+                        <div class="recent-news-items-img-holder">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311280-29092023-1695952697-546217164-1.jpeg" alt="">
+                        </div>
+                        <div class="recent-news-items-text">
+                            <p>Хойд Солонгос цөмийн зэвсгийн бодлогоо үндсэн хуульд тусгав</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus aut blanditiis. Consequuntur illo, laudantium animi tenetur dolore quia asperiores praesentium possimus!</p>
+                            <div class="shared-posted-times">
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg" alt="" width="14">
+                                    <span>11 минутын өмнө нийтлэв</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <button>
+                        <p>Цааш үзэх</p>
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/more.50d348c2.png" width="17" height="21" alt="">
+                    </button>
+                </div>
+                <div class="guest-talking">
+                    <div class="guest-talking-section">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/interview.b47c0f6b.png" width="20" alt="">
+                        <h2>Ярилцлага</h2>
+                    </div>
+                    <div class="guest-talking-items relative">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311161-26092023-1695722699-1744578070-gutal.jpg" alt="">
+                        <div class="absolute d-flex">
+                            <h3>Гутал</h3>
+                            <p>Гутал #24: Тэнд автобус очихгүй, таксидвал төлбөр нь "тэнгэрт хадна", тэглээ ч хичээлээ таслахгүй</p>
+                            <span>Дэлгэрэнгүй</span>
+                        </div>
+                    </div>
+                    <div class="guest-talking-items relative">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311161-26092023-1695722699-1744578070-gutal.jpg" alt="">
+                        <div class="absolute d-flex">
+                            <h3>Гутал</h3>
+                            <p>Гутал #24: Тэнд автобус очихгүй, таксидвал төлбөр нь "тэнгэрт хадна", тэглээ ч хичээлээ таслахгүй</p>
+                            <span>Дэлгэрэнгүй</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gogo-style">
+                    <div class="gogo-style-title">
+                        <h3>GoGo</h3>
+                        <span>хэв маяг</span>
+                    </div>
+                    <div class="gogo-style-card-container">
+                        <div class="gogo-style-card-items">
+                            <div class="gogo-style-card-body d-flex relative">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-style-card-items-article-comments">
+                                <div class="gogo-style-card-items-article">
+                                    <p>Миний санал болгох ном: "Мэлхий"</p>
+                                </div>
+                                <div class="gogo-style-card-items-comments">
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>153</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gogo-style-card-items">
+                            <div class="gogo-style-card-body d-flex relative">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-style-card-items-article-comments">
+                                <div class="gogo-style-card-items-article">
+                                    <p>Миний санал болгох ном: "Мэлхий"</p>
+                                </div>
+                                <div class="gogo-style-card-items-comments">
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>153</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gogo-style-card-items">
+                            <div class="gogo-style-card-body d-flex relative">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-style-card-items-article-comments">
+                                <div class="gogo-style-card-items-article">
+                                    <p>Миний санал болгох ном: "Мэлхий"</p>
+                                </div>
+                                <div class="gogo-style-card-items-comments">
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>153</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gogo-style-card-items">
+                            <div class="gogo-style-card-body d-flex relative">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-style-card-items-article-comments">
+                                <div class="gogo-style-card-items-article">
+                                    <p>Миний санал болгох ном: "Мэлхий"</p>
+                                </div>
+                                <div class="gogo-style-card-items-comments">
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>153</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gogo-style-card-items">
+                            <div class="gogo-style-card-body d-flex relative">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-style-card-items-article-comments">
+                                <div class="gogo-style-card-items-article">
+                                    <p>Миний санал болгох ном: "Мэлхий"</p>
+                                </div>
+                                <div class="gogo-style-card-items-comments">
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>153</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gogo-watch">
+                <div class="gogo-watch-title d-flex">
+                    <img src="https://mgl.gogo.mn//newsn/v4/images/play-btn.12e64771.svg" width="30" alt="">
+                    <h3>Үзэх</h3>
+                </div>
+                <div class="gogo-watch-items-container">
+                    <div class="gogo-watch-items-list">
+                        <div class="gogo-watch-items relative">
+                            <div class="gogo-watch-items-img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2022/12/301096-13122022-1670904893-1355198053-amarbaysgalan1.jpeg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-watch-items-logo absolute">
+                                <img src="https://mgl.gogo.mn//newsn/v4/images/video-icon.f8c9c67e.svg" width="45" alt="">
+                            </div>
+                        </div>
+                        <div class="gogo-watch-items-text">
+                            <p>ВИДИО: Өнгөт арьст охинд медалийг нь өгөөгүй үйлдэлдээ гимнастикийн холбоо уучлалт гуйжээ</p>
+                            <div class="gogo-watch-items-comments">
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>153</span>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gogo-watch-items-list">
+                        <div class="gogo-watch-items relative">
+                            <div class="gogo-watch-items-img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2022/12/301096-13122022-1670904893-1355198053-amarbaysgalan1.jpeg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-watch-items-logo absolute">
+                                <img src="https://mgl.gogo.mn//newsn/v4/images/video-icon.f8c9c67e.svg" width="45" alt="">
+                            </div>
+                        </div>
+                        <div class="gogo-watch-items-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit quos eius corrupti exercitationem eum, placeat nam temporibus saepe, unde quo dolorem, quae cumque! Necessitatibus, quis nihil sequi saepe, nulla repudiandae beatae quasi aliquam animi similique ullam suscipit unde velit aliquid! Voluptates est sapiente deserunt impedit velit fugit aperiam hic!</p>
+                            <div class="gogo-watch-items-comments">
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>153</span>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gogo-watch-items-list">
+                        <div class="gogo-watch-items relative">
+                            <div class="gogo-watch-items-img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2022/12/301096-13122022-1670904893-1355198053-amarbaysgalan1.jpeg" alt="">
+                                <div class="absolute">
+                                    <p>Унших</p>
+                                </div>
+                            </div>
+                            <div class="gogo-watch-items-logo absolute">
+                                <img src="https://mgl.gogo.mn//newsn/v4/images/video-icon.f8c9c67e.svg" width="45" alt="">
+                            </div>
+                        </div>
+                        <div class="gogo-watch-items-text">
+                            <p>ВИДИО: Өнгөт арьст охинд медалийг нь өгөөгүй үйлдэлдээ гимнастикийн холбоо уучлалт гуйжээ</p>
+                            <div class="gogo-watch-items-comments">
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>153</span>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg" width="12" alt="">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div class="gogo-logo-footer">
+                    <img src="../gogo.mn/gogo-img/gogo-logo.345096b3.png" width="120" alt="">
+                </div>
+                <div class="gogo-about-us-footer">
+                        <a href="#">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" width="20" alt="">
+                            <p>Бидний тухай</p>
+                        </a>
+                        <a href="#">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/surtalchilgaa.2f9ee07e.png" width="20" alt="">
+                            <p>Сурталчилгаа байршуулах</p>
+                        </a>
+                        <a href="#">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/redakts.41ba2bab.png" width="20" alt="">
+                            <p>Редакцийн ёс зүй</p>
+                        </a>
+                        <a href="#">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/nuutslal.e823e529.png" width="20" alt="">
+                            <p>Нууцлалын бодлого</p>
+                        </a>
+                        <a href="#">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/holboo.99f66db8.png" width="20" alt="">
+                            <p>Холбоо барих</p>
+                        </a>
+                </div>
+            </div>
+            <div>
+                <div class="mongol-content">
+                    <p>2007 - 2023 Монгол Контент ХХК</p>
+                    <p>Бүх эрх хуулиар хамгаалагдсан</p>
+                </div>
+                <div class="footer-social">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
