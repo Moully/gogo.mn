@@ -2,7 +2,8 @@
     margin: 0;
 }
 .container{
-    width: 100%;
+    position: relative;
+    width: 440px;
     margin: auto;
 }
 .navbar{
@@ -243,4 +244,9 @@
 }
 .mobile-menu-main-section-about-us a img{
     padding-right: 10px;
+}
+@media (min-width:640px){
+.container{
+    width: 640px;
+}
 }
